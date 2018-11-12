@@ -58,6 +58,8 @@
 
 Python 프로젝트는 [**Pipenv**](https://github.com/pypa/pipenv) 를 이용해 가상 환경에서 작업합니다
 
+**❗️ pipenv 는 절대 homebrew 로 설치 하지 마시고, python 을 정상적으로 설치 하신 뒤 pip3 로 전역으로 설치하세요 ❗️**
+
 
 ### 💻 OSX 기준 Python 환경 설정
 ---
@@ -90,6 +92,9 @@ $ pip3 install pip==18.0
 
 $ pip3 --version
 pip 18.0 from /usr/local/lib/python3.6/site-packages/pip (python 3.6)
+
+# 이후 pipenv 를 설치합니다
+$ pip3 install pipenv #  전역 설치
 ```
 
 - 위와 같이 파이썬 설치를 완료했다면 Gitlab 에서 파이썬 프로젝트를 Clone 하여 로컬에 설치하고 `pipenv shell` 명령어가 잘 작동하는지 확인합니다

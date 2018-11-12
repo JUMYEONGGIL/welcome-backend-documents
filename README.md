@@ -1,7 +1,7 @@
 ![](assets/images/rawpixel-973116-unsplash.jpg)
 [Photo by rawpixel on Unsplash](https://unsplash.com/photos/lm6wcGMLaUM)
 
-# Welcome Document
+# 💖 Welcome Document
 
 > Created: Nov 12, 2018 15:17 AM
 
@@ -59,7 +59,7 @@
 Python 프로젝트는 [**Pipenv**](https://github.com/pypa/pipenv) 를 이용해 가상 환경에서 작업합니다
 
 
-### OSX 기준 Python 환경 설정
+### 💻 OSX 기준 Python 환경 설정
 ---
 
 - 파이썬 설치는 **Homebrew** 를 통해 설치 하는 것을 권장합니다
@@ -119,7 +119,7 @@ git+http://devlab.celebtide.com:8081/dev/mycelebsPythonConfig.git#egg=mycelebsPy
 ```
 
 
-### Python Coding Convention
+### 🐍 Python Coding Convention
 ---
 
 - **기본적인 코딩 스타일을 준수**합니다 (snake_case, PascalCase)
@@ -147,7 +147,7 @@ for r in self.aurora_cursor:
 ```
 
 
-### Editor or IDE
+### 📝 Editor or IDE
 ---
 
 강요되는 툴은 없습니다. Coding Convention 만 지켜주세요

@@ -58,11 +58,12 @@
 
 Python 프로젝트는 [**Pipenv**](https://github.com/pypa/pipenv) 를 이용해 가상 환경에서 작업합니다
 
-1. OSX 기준 Python 환경 설정
-1. 파이썬 설치는 **Homebrew** 를 통해 설치 하는 것을 권장합니다
-- 다만 아래와 같이, 설치할 경우 기본적으로 Python3.7 이 설치 되는데
-- 현재 AWS Lambda 의 런타임은 **Python3.6 까지만 지원**합니다
-- 따라서 아래와 같은 추가 작업이 필요합니다
+**OSX 기준 Python 환경 설정**
+
+- 파이썬 설치는 **Homebrew** 를 통해 설치 하는 것을 권장합니다
+    - 다만 아래와 같이, 설치할 경우 기본적으로 Python3.7 이 설치 되는데
+    - 현재 AWS Lambda 의 런타임은 **Python3.6 까지만 지원**합니다
+    - 따라서 아래와 같은 추가 작업이 필요합니다
 
 ```bash
 $ brew install python
@@ -115,7 +116,7 @@ git+http://devlab.celebtide.com:8081/dev/mycelebsPythonConfig.git#egg=mycelebsPy
 # 만약 위 처럼 #egg=[패키지명] 값이 없다면, pipenv install 할 때 오류가 발생합니다. 꼭 표시해 주세요
 ```
 
-2. Python Coding Convention
+**Python Coding Convention**
 
 - **기본적인 코딩 스타일을 준수**합니다 (snake_case, PascalCase)
 - 그 외 강요되는 코딩 스타일은 없지만, 변수 이름으로 어떠한 값일지 **유추하기 힘든 변수명 사용은 지양**합니다
@@ -141,7 +142,7 @@ for r in self.aurora_cursor:
 }
 ```
 
-3. Editor or IDE
+**Editor or IDE**
 
 강요되는 툴은 없습니다. Coding Convention 만 지켜주세요
 

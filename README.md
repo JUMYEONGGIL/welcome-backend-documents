@@ -43,8 +43,8 @@
 
 1. **최재영** 님께서 보통 초대와 가입 방법에 대해 알려 주십니다
 2. 개발팀이 사용 중인 채널은 공식적으로 **#dev** 채널이 있습니다
-    1. 그 외 #bds-monitoring, #backend-notification(private) 정도가 있습니다
-    2. #dev, #bds-monitoring 은 직접 참여가 가능하고, #backend-notification은 **이찬영** 님의 초대가 필요합니다
+    1. 그 외 `#bds-monitoring`, `#backend-notification`(private) 정도가 있습니다
+    2. `#dev`, `#bds-monitoring` 은 직접 참여가 가능하고, `#backend-notification`은 **이찬영** 님의 초대가 필요합니다
 
 
 ## 🏔 개발환경 (Backend Only)
@@ -58,15 +58,15 @@
 
 Python 프로젝트는 [**Pipenv**](https://github.com/pypa/pipenv) 를 이용해 가상 환경에서 작업합니다
 
-**❗️ pipenv 는 절대 homebrew 로 설치 하지 마시고, python 을 정상적으로 설치 하신 뒤 pip3 로 전역으로 설치하세요 ❗️**
+**!! pipenv 는 절대 homebrew 로 설치 하지 마시고, python 을 정상적으로 설치 하신 뒤 pip3 로 전역으로 설치하세요 !!**
 
-**❗️ awscli 또한 마찬가지 입니다❗️**
+**!! awscli 또한 마찬가지 입니다 !!**
 
 
 ### 💻 OSX 기준 Python 환경 설정
 ---
 
-- 파이썬 설치는 **Homebrew** 를 통해 설치 하는 것을 권장합니다
+- 파이썬 설치는 **🍺 Homebrew** 를 통해 설치 하는 것을 권장합니다
     - 다만 아래와 같이, 설치할 경우 기본적으로 Python3.7 이 설치 되는데
     - 현재 AWS Lambda 의 런타임은 **Python3.6 까지만 지원**합니다
     - 따라서 아래와 같은 추가 작업이 필요합니다
@@ -107,7 +107,7 @@ Default output format [json]:
 ```
 
 - 위와 같이 파이썬 설치를 완료했다면 Gitlab 에서 파이썬 프로젝트를 Clone 하여 로컬에 설치하고 `pipenv shell` 명령어가 잘 작동하는지 확인합니다
-- 마찬가지로, pipenv shell 을 그냥 할 경우 pip의 버전이 18.1 로 설치되는 경우가 있기 때문에 18.0 으로 다운그레이드 해줍니다
+- 마찬가지로, `pipenv shell` 을 그냥 할 경우 pip의 버전이 18.1 로 설치되는 경우가 있기 때문에 **18.0 으로 다운그레이드** 해줍니다
 
 ```bash
 $ pipenv shell
@@ -122,7 +122,7 @@ pip 18.0 from /usr/local/lib/python3.6/site-packages/pip (python 3.6)
 ```
 
 - pipenv 사용 법에 대해 [문서를 보고](https://github.com/pypa/pipenv) (길지 않으니) 익혀 두시면 좋습니다
-- 마이셀럽스 자체 패키지 설치의 경우 requirements.txt 파일에 패키지 설치 경로가 명시 되어 있는데 #egg 정보가 있는지 확인이 필요합니다
+- 마이셀럽스 자체 패키지 설치의 경우 `requirements.txt` 파일에 패키지 설치 경로가 명시 되어 있는데 #egg 정보가 있는지 확인이 필요합니다
 
 ```bash
 # requirements.txt
@@ -136,7 +136,7 @@ git+http://devlab.celebtide.com:8081/dev/mycelebsPythonConfig.git#egg=mycelebsPy
 ### 🐍 Python Coding Convention
 ---
 
-- **기본적인 코딩 스타일을 준수**합니다 (snake_case, PascalCase)
+- **기본적인 코딩 스타일을 준수**합니다 (**snake_case**, **PascalCase**)
 - 그 외 강요되는 코딩 스타일은 없지만, 변수 이름으로 어떠한 값일지 **유추하기 힘든 변수명 사용은 지양**합니다
 
 ```python
@@ -164,11 +164,11 @@ for r in self.aurora_cursor:
 ### 📝 Editor or IDE
 ---
 
-강요되는 툴은 없습니다. Coding Convention 만 지켜주세요
+강요되는 툴은 없습니다. **Coding Convention** 만 지켜주세요
 
 **PyCharm** 또는 **IntelliJ** 는 요청하시면 라이센스 구매 해 드립니다
 
-(대부분은 Sublime Text, Visual Studio Code를 사용하고 계십니다)
+(대부분은 Sublime Text, Visual Studio Code를 사용하고 계십니다. 저는 PyCharm)
 
 
 ## 👨‍👩‍👧‍👧  Companies

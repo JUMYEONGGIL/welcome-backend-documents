@@ -145,6 +145,16 @@ for r in self.aurora_cursor:
 ```
 
 위와 같은 변수명은 유추가 힘든것도 있지만 **변수명을 리팩토링 할 때 (찾아 바꾸기) 힘듭니다** 😭
+
+- 함수명은 앞에 어떤 작동을 하는지 동사로 표현해 주세요.
+
+```python
+def select_log():
+    pass
+def delete_log():
+    pass
+```
+
 - VSCode 기준 python linting option
 
 ```json

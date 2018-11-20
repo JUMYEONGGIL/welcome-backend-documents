@@ -1,5 +1,5 @@
 # 필터 랭킹 등록
-
+> Created: Nov 20, 2018 10:30 PM
 
 ## 📝 들어가기 전에
 ---
@@ -72,4 +72,4 @@ start daemon
 SELECT *
 FROM celeb.vertical_category_filter_ranking
 WHERE cd_idx = {cd_idx};
-```
+```s

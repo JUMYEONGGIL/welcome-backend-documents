@@ -25,7 +25,11 @@
     ![](assets/images/create_increment_in_excel.gif)
 
 4. 마지막 행의 cd_idx 번호 +1 한 값을 sequel pro 에서 type_celeb_relation 테이블의 table info 탭에 가서 auto_increment 값을 변경한다
+    
+    **반드시 Reset AUTO_INCREMENT to... 를 선택하세요**
+    ![](assets/images/alter_auto_increment.png)
 
+    **또는 쿼리로 하는 방법도 있습니다**
     ```sql
     ALTER TABLE celeb.type_celeb_relation AUTO_INCREMENT = {EXCEL에서 연속 채우기로 생성한 번호의 마지막 행의 값 + 1};
     ```

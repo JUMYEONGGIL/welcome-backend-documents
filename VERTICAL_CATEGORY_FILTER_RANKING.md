@@ -1,5 +1,6 @@
 # 필터 랭킹 등록
 
+
 ## 📝 들어가기 전에
 ---
 
@@ -23,6 +24,7 @@ UnboundLocalError: local variable 'filter_rank' referenced before assignment
 
 이럴때는 application 서버에서 **점수를 생성하는 프로그램을 실행** 해야 합니다
 
+
 ## 💯 점수 생성
 ---
 
@@ -37,8 +39,34 @@ $ python /service/backend/ba-word2vec/export_emotion_filter_ranking.py -r start 
 $ tail -f /service/backend/ba-word2vec/logs/export_emotion_filter_ranking.log
 ```
 
-## 🙈 결과 확인
+
+
+
+## 🙈 실행 및 결과 확인
 ---
+
+```bash
+[root@ip-172-31-27-152 /]# python /service/backend/ba-word2vec/export_emotion_filter_ranking.py -r start -v 25
+start daemon
+
+[root@ip-172-31-27-152 /]# tail -f /service/backend/ba-word2vec/logs/export_emotion_filter_ranking.log
+2018-11-20 06:15:02,120 dt.export_emotion_filter_ranking [INFO] START TCC_IDX : 22
+2018-11-20 06:15:14,799 dt.export_emotion_filter_ranking [INFO] END PROCESS_CATEGORY_FILTER_RANKING TCC_IDX : 22
+2018-11-20 06:15:14,812 dt.export_emotion_filter_ranking [INFO] filter_list cnt : 10
+2018-11-20 06:15:14,824 dt.export_emotion_filter_ranking [INFO] -----------------tcc_idx: 22, cnt : 10
+2018-11-20 06:15:19,604 dt.export_emotion_filter_ranking [INFO] END PROCESS_FILTER_RANKING TCC_IDX : 22
+2018-11-20 06:15:19,645 dt.export_emotion_filter_ranking [INFO] 종료 시간 2018-11-20 06:15:19.645527
+2018-11-20 06:15:19,645 dt.export_emotion_filter_ranking [INFO] 경과 시간 0:00:17.659540
+2018-11-20 10:53:18,067 dt.export_emotion_filter_ranking [INFO] Program Started
+2018-11-20 10:53:18,067 dt.export_emotion_filter_ranking [INFO] 시작 시간2018-11-20 10:53:18.067827
+2018-11-20 10:53:18,195 dt.export_emotion_filter_ranking [INFO] START TCC_IDX : 25
+2018-11-20 10:53:36,128 dt.export_emotion_filter_ranking [INFO] END PROCESS_CATEGORY_FILTER_RANKING TCC_IDX : 25
+2018-11-20 10:53:36,137 dt.export_emotion_filter_ranking [INFO] filter_list cnt : 10
+2018-11-20 10:53:36,148 dt.export_emotion_filter_ranking [INFO] -----------------tcc_idx: 25, cnt : 10
+2018-11-20 10:53:41,730 dt.export_emotion_filter_ranking [INFO] END PROCESS_FILTER_RANKING TCC_IDX : 25
+2018-11-20 10:53:41,757 dt.export_emotion_filter_ranking [INFO] 종료 시간 2018-11-20 10:53:41.757942
+2018-11-20 10:53:41,758 dt.export_emotion_filter_ranking [INFO] 경과 시간 0:00:23.689962
+```
 
 ```sql
 SELECT *

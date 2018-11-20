@@ -32,6 +32,9 @@ $ ssh root@13.113.223.47
 # vertical_category_filter_ranking 테이블에 업데이트
 # tcc_idx 의 경우는 분석하려는 버티컬의 type_celeb_code 를 입력하시면 됩니다
 $ python /service/backend/ba-word2vec/export_emotion_filter_ranking.py -r start -v {tcc_idx}
+
+# 실행중인 프로그램의 실시간 로그 확인 및 프로세스 종료 확인
+$ tail -f /service/backend/ba-word2vec/logs/export_emotion_filter_ranking.log
 ```
 
 ## 🙈 결과 확인

@@ -82,9 +82,13 @@ $ aws s3 cp . s3://celebtide-image-upload/origin/ssgdfm_eye --recursive --includ
 #### Common Rules
 1. **이미지는 반드시 jpg 파일 형식이어야 합니다** 
     - 담당자에게 필히 확인 받으세요
-2. **파일 이름은...**
+2. **파일 이름은 형식은 아래와 같습니다**
+    - `{cd_idx}_{sequence}.jpg`
+    - sequence는 만약 개체에 해당하는 이미지가 1개라면 `{cd_idx}_0.jpg`
+        - 2개 라면 `{cd_idx}_0.jpg, {cd_idx}_1.jpg` 입니다
 
 ### 👀 이미지 정상 등록 확인
+---
 
 #### 데이터베이스에서 확인
 celeb_image_url 테이블에 이미지가 잘 업로드 되었는지 확인합니다

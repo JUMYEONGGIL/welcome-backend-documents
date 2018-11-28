@@ -1,5 +1,7 @@
 # 필터 랭킹 등록
 > Created: Nov 20, 2018 10:30 PM
+>
+> Author: Kyoong
 
 ## 📝 들어가기 전에
 ---

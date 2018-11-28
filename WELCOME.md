@@ -4,6 +4,8 @@
 # 💖 Welcome Document
 
 > Created: Nov 12, 2018 15:17 AM
+>
+> Author: Kyoong
 
 ## Basic
 ---

@@ -1,5 +1,7 @@
 # 마이셀럽스 개체 이미지 대량 업로드 (via AWS CLI)
 > Created: Nov 20, 2018 14:05 PM
+>
+> Author: Kyoong
 
 ## 📸 신규 개체의 이미지 업로드
 ---

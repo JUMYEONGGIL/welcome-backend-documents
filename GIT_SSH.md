@@ -1,4 +1,4 @@
-# 파인더 생성
+# Git SSH 연결 (via Azure DevOps)
 > Created: Nov 28, 2018 14:00 PM
 >
 > Author: Kyoong

@@ -41,6 +41,7 @@ Git과 원격 저장소 서비스(Gitlab, Azure DevOps...) 통한 협업을 하�
 1. Upstream 저장소를 Fork 한다
     - Repos → Files 화면에서 우측 상단에 Fork 버튼을 누르시면 됩니다
 2. 로컬에 remote url 을 두 가지로 세팅한다
+    
     ```bash
     $ git remote add upstream mycelebsbackend@vs-ssh.visualstudio.com:v3/mycelebsbackend/BDS/BDS
     $ git remote add origin mycelebsbackend@vs-ssh.visualstudio.com:v3/mycelebsbackend/BDS/BDS.kyoong
@@ -57,11 +58,13 @@ Git과 원격 저장소 서비스(Gitlab, Azure DevOps...) 통한 협업을 하�
 1. 작업시작 전 백엔드 Azure DevOps 의 **WORK → Boards → Boards 에 작업을 추가**한다
     - 예를 들어, TV 버티컬의 basic_info 모듈 수정 작업이 있는경우 그 내용을 Boards 에 등록한다
 2. 작업시작 전 · 후 **반드시 upstream 저장소를 pull 받는다**
+    
     ```bash
     # 작업 시작 전, 후
     $ git pull upstream master
     ```
 3. origin에 push 한 뒤에 upstream 에 Pull Request 보낸다
+    
     ```bash
     # Push 전에도 꼭 upstream 을 한 번 받아봄
     $ git pull upstream master

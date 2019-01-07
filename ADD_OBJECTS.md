@@ -1,6 +1,6 @@
 # 마이셀럽스 신규 개체 등록 방법
 > Created: Nov 12, 2018 17:11 PM
->
+> Updated: Jan 7, 2019 15:00 PM
 > Author: Kyoong
 
 
@@ -11,8 +11,9 @@
 
 상황에 맞는 방법으로 처리하세요 👌
 
-<details>
-<summary>xlsx 파일로 전달 받은 경우</summary>
+
+### `.xlsx` 파일로 전달 받은 경우
+---
 
 **사용할 테이블**
 - `type_celeb_relation`
@@ -54,10 +55,10 @@
     FROM {vertical_data}
     WHERE cd_idx BETWEEN {최초 복사한 시작 cd_idx} AND {EXCEL에서 연속 채우기로 생성한 번호의 마지막 행의 값 + 1}
     ```
-</details>
 
-<details>
-    <summary>sql 파일로 전달 받은 경우</summary>
+
+### `sql` 파일로 전달 받은 경우
+---
     
 1. 전달받은 sql 파일을 실행 또는 import 한다 (sequel-pro 에서는 import 가능)
 2. pk 가 `auto_increment` 인지, 1번 부터 입력된 상태인지 확인한다
@@ -112,4 +113,3 @@
         ROLLBACK;
         COMMIT;
         ```
-</details>

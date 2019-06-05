@@ -1,9 +1,9 @@
-# STAR 개체 이미지 대량 업로드 (Shell Script)
+# MYCELEBS_ALL 개체 이미지 대량 업로드 (Shell Script)
 > Created: 2019.06.04
 >
 > Author: xxel(hosung)
 
-## 📸 신규 스타  개체의 이미지 업로드
+## 📸 신규 MYCELEBS_ALL 개체의 이미지 업로드
 
 - `AWS S3 - mycelebs-images`
     - 이 버킷에 이미지가 저장됩니다.
@@ -42,7 +42,7 @@ Requirement already satisfied: six>=1.5 in /usr/local/lib/python3.6/site-package
 ---
 1. Shell Script를 작성하여 실행합니다. 
 
-2. Shell Script 내용은 아래와 같이 작성 합니다. ( file name : star_img.sh)
+2. Shell Script 내용은 아래와 같이 작성 합니다. ( file name : mycelebs_all_img.sh)
 
 ￼
 
@@ -64,7 +64,7 @@ done
 ```
 
 3. 해당 스크립트에 실행 권한을 부여합니다.
-```user [~] → chmod +x star_img.sh```
+```user [~] → chmod +x mycelebs_all_img.sh```
 
 
 4. 스크립트 실행 전 업로드 할 이미지가 들어있는 폴더의 절대경로를 확인합니다.
@@ -74,21 +74,21 @@ done
 - 해당 경로 내에는 series_id/이미지.png 가 존재해야 합니다. 
 
 해당 폴더 구조는 예시. series_id = 351518 / 상위 폴더 날짜로 생성 (20190604)
-```/Users/hosunglee/star_ko/20190604/351518/351518_108@108.png
-/Users/hosunglee/star_ko/20190604/351518/351518_144@144.png
-/Users/hosunglee/star_ko/20190604/351518/351518_240@240.png
-/Users/hosunglee/star_ko/20190604/351518/351518_249@249.png
-/Users/hosunglee/star_ko/20190604/351518/351518_288@288.png
-/Users/hosunglee/star_ko/20190604/351518/351518_573@372.png
-/Users/hosunglee/star_ko/20190604/351518/351518_1035@420.png
-/Users/hosunglee/star_ko/20190604/351518/351518_1035@738.png
-/Users/hosunglee/star_ko/20190604/351518/351518_1125@1464.png
+```/Users/hosunglee/mycelebs_imgs/20190604/351518/351518_108@108.png
+/Users/hosunglee/mycelebs_imgs/20190604/351518/351518_144@144.png
+/Users/hosunglee/mycelebs_imgs/20190604/351518/351518_240@240.png
+/Users/hosunglee/mycelebs_imgs/20190604/351518/351518_249@249.png
+/Users/hosunglee/mycelebs_imgs/20190604/351518/351518_288@288.png
+/Users/hosunglee/mycelebs_imgs/20190604/351518/351518_573@372.png
+/Users/hosunglee/mycelebs_imgs/20190604/351518/351518_1035@420.png
+/Users/hosunglee/mycelebs_imgs/20190604/351518/351518_1035@738.png
+/Users/hosunglee/mycelebs_imgs/20190604/351518/351518_1125@1464.png
 ```
 
 4. 스크립트 실행 시 업로드 할 이미지가 모여 있는 상위 폴더 경로를 입력 해줍니다.
-- star_img.sh /Users/hosunglee/star_ko/20190604/ -> 업로드 된 파일의 구분을 위해 업로드 상위폴더(20190604)를 생성 관리합니다.
+- star_img.sh /Users/hosunglee/mycelebs_imgs/20190604/ -> 업로드 된 파일의 구분을 위해 업로드 상위폴더(20190604)를 생성 관리합니다.
 
-```user [~] → star_img.sh /Users/hosunglee/star_ko/20190604/```
+```user [~] → star_img.sh /Users/hosunglee/mycelebs_imgs/20190604/```
 
 
 #### Common Rules

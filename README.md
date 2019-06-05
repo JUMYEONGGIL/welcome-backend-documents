@@ -15,3 +15,4 @@
 7. 🎄  [Mycelebs Backend Git work flow](http://devlab.celebtide.com:8081/dev/welcome-backend-documents/blob/master/GIT_WORK_FLOW.md)
 8. 🦋  [신규 버티컬 솔라 세팅](http://devlab.celebtide.com:8081/dev/welcome-backend-documents/blob/master/SOLR_SETTING.md)
 9. 🐞  [신규 버티컬 파인더 세팅](http://devlab.celebtide.com:8081/dev/welcome-backend-documents/blob/master/FINDER_SETTING.md)
+10. 🦔 [마이셀럽스 ALL 개체 이미지 업로드 (Shell Script)](http://devlab.celebtide.com:8081/dev/welcome-backend-documents/blob/master/MYCELEBS_ALL_IMAGE_UPLOADS.md)

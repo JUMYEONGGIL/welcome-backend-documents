@@ -1,4 +1,4 @@
-# MYCELEBS_ALL 개체 이미지 대량 업로드 (Shell Script)
+# MYCELEBS_ALL 개체 이미지 업로드 (Shell Script)
 > Created: 2019.06.04
 >
 > Author: xxel(hosung)

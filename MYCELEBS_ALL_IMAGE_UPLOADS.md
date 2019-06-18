@@ -59,7 +59,7 @@ do
 cd $here
 cd ./$folder
         series_id=$folder
-        $cmd $s3_path/$series_id --recursive --include="*.png"
+        $cmd $s3_path/$series_id --recursive --exclude "*" --include "*_*@*.png"
 done
 ```
 

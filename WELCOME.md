@@ -179,6 +179,8 @@ def delete_log():
 }
 ```
 
+![python_coding_convention_mg2](./python_coding_convention_mg2.png)
+
 
 ### 📝 Editor or IDE
 ---

@@ -179,9 +179,53 @@ def delete_log():
 }
 ```
 ---
-![python_coding_convention_mg2](./python_coding_convention_mg2.png)
+```python
+# 무분별한 self 사용의 문제점
+- 값을 set하거나 get하는 과정에서 self 사용을 줄이고 지역변수에 저장하여 return한는 방법 예시
 
+class MyCelebs:
+    def __init__(self):
+        self.name = ''
+        self.age = 0
+        self.development = ''
+    
+    def __del__(self):
+        del self.name
+        del self.age
+        del self.development
 
+    def set_value(self, name, age, development):
+
+        # self를 사용하여 값을 저장하면 어떤 변수에 어떤 값이 저장되었는지 일일히 확인해야 한다
+        # 선호되지 않는 방법
+        self.name = name
+        self.age = age
+        self.development = development
+
+        # 값을 전달하는 방식으로 지역변수에 값을 저장하여 return하여 main함수만 보고 알 수 있도록 
+        # 불필요한 방식은 배제한다
+        # 선호하는 방법
+        info = {}
+
+        info['name'] = name
+        info['age'] = age
+        info['development'] = development
+
+        return info
+    
+    def main(self):
+        
+        # main함수만 보고 어떤 변수에 값이 들어갔는지 일일히 확인해야 한다
+        # 선호되지 않는 방법
+        self.set_value('mycelebs', 30, 'backend')
+        
+        # 함수에 변수를 생성하여 리턴을 하게되면 번거롭게 함수에 사용된 변수를 확인하지 않아도
+        # main함수 내에서 변수에 대한 값을 확인할 수 있다
+        # 선호되는 방법
+        info = self.set_value('mycelebs', 30, 'backend')
+        print(info)
+```
+---
 ### 📝 Editor or IDE
 ---
 
